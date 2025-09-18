@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LitkaReload Client</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #121212;
+            color: white;
+        }
+
+        header {
+            background-color: #1e1e1e;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .hero {
+            position: relative;
+            background-image: url('https://i.ibb.co/WFzMcCy/minecraft-bg.jpg'); /* Замени при необходимости */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 0 30px;
+            overflow: hidden;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.65); /* затемнение */
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #ccc;
+        }
+
+        .button-group {
+            margin-top: 25px;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .btn-blue {
+            background-color: #1e90ff;
+            color: white;
+        }
+
+        .btn-blue:hover {
+            background-color: #0074e4;
+        }
+
+        .btn-gray {
+            background-color: #333;
+            color: white;
+        }
+
+        .btn-gray:hover {
+            background-color: #444;
+        }
+
+        .advantages {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 60px 30px;
+            background-color: #1a1a1a;
+        }
+
+        .card {
+            background-color: #242424;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #1e90ff;
+        }
+
+        .card p {
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">LitkaReload</div>
+</header>
+
+<section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <h1>About us</h1>
+        <p>We provide you with the best client for a comfortable gaming that will give you the best gaming experience.</p>
+        <div class="button-group">
+            <a href="https://t.me/litkareload" class="btn btn-blue">Скачать</a>
+            <a href="#" class="btn btn-gray">Read More</a>
+        </div>
+    </div>
+</section>
+
+<section class="advantages">
+    <div class="card">
+        <h3>🎨 Beautiful appearance</h3>
+        <p>Our client has a large number of visual features that will make your game more colorful. And also you can customize the design of the client for yourself, making it really beautiful.</p>
+    </div>
+    <div class="card">
+        <h3>⚙️ Customizability</h3>
+        <p>In our client you can customize almost any function for yourself, as well as use the configurations of other users. This allows you to use our client to the maximum of its capabilities.</p>
+    </div>
+    <div class="card">
+        <h3>⚡ Performance</h3>
+        <p>We are constantly improving the optimization of our client and the game itself. You will be able to run our client even on weak computers.</p>
+    </div>
+    <div class="card">
+        <h3>🔁 Frequent updates</h3>
+        <p>We regularly update the functionality in our client, adding new functions, as well as improving existing ones. Thanks to this, our client has advantages over all existing servers.</p>
+    </div>
+    <div class="card">
+        <h3>🛠️ Best support</h3>
+        <p>We have the best support, who know what they are doing and can help you with any issue related to our client.</p>
+    </div>
+</section>
+
+</body>
+</html>
